@@ -1,0 +1,349 @@
+{
+  "purpose": "Static design documentation only; no application or matching-pipeline changes.",
+  "input_sha256": {
+    "uscis_fy2025_industries.csv": "8eeea5f60a8ec7113b419e421f8fd5136fe31df6e5cab80c346e14cf84a907d0",
+    "opt_h1b_employer_overlap.csv": "aeebc16a6835276a15f1a64f7a75673a67f84c139e855626bacd640ae8dce896",
+    "opt_h1b_match_audit.csv": "b56cabdfdce9adab043e39f4751b57169ed63368ba8f273633d017aaade5c928"
+  },
+  "industry_total": 114804,
+  "industry_missing": 2215,
+  "match_types": {
+    "case_space": 28,
+    "formatting": 4,
+    "verbatim": 15
+  },
+  "match_type_rule": "Verbatim if original strings equal; else case_space if uppercase whitespace-collapsed names equal; otherwise formatting. All rows were already accepted by the pipeline.",
+  "points": [
+    {
+      "employer_name": "Arizona State University",
+      "uscis_employer_name": "ARIZONA STATE UNIVERSITY",
+      "total_opt_or_stem_opt_participants": "1962",
+      "h1b_initial_approvals": "96",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "Harvard University",
+      "uscis_employer_name": "HARVARD UNIVERSITY",
+      "total_opt_or_stem_opt_participants": "1036",
+      "h1b_initial_approvals": "112",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "University of Pennsylvania",
+      "uscis_employer_name": "UNIVERSITY OF PENNSYLVANIA",
+      "total_opt_or_stem_opt_participants": "797",
+      "h1b_initial_approvals": "155",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "University of Southern California",
+      "uscis_employer_name": "UNIVERSITY OF SOUTHERN CALIFORNIA",
+      "total_opt_or_stem_opt_participants": "796",
+      "h1b_initial_approvals": "71",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "Infosys Limited",
+      "uscis_employer_name": "INFOSYS LIMITED",
+      "total_opt_or_stem_opt_participants": "788",
+      "h1b_initial_approvals": "257",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "Massachusetts Institute of Technology",
+      "uscis_employer_name": "MASSACHUSETTS INSTITUTE OF TECHNOLOGY",
+      "total_opt_or_stem_opt_participants": "673",
+      "h1b_initial_approvals": "99",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "Yale University",
+      "uscis_employer_name": "YALE UNIVERSITY",
+      "total_opt_or_stem_opt_participants": "648",
+      "h1b_initial_approvals": "108",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "University of Florida",
+      "uscis_employer_name": "UNIVERSITY OF FLORIDA",
+      "total_opt_or_stem_opt_participants": "640",
+      "h1b_initial_approvals": "132",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "Datics Inc",
+      "uscis_employer_name": "DATICS INC",
+      "total_opt_or_stem_opt_participants": "635",
+      "h1b_initial_approvals": "14",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "New York University",
+      "uscis_employer_name": "NEW YORK UNIVERSITY",
+      "total_opt_or_stem_opt_participants": "627",
+      "h1b_initial_approvals": "81",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "Syracuse University",
+      "uscis_employer_name": "SYRACUSE UNIVERSITY",
+      "total_opt_or_stem_opt_participants": "542",
+      "h1b_initial_approvals": "21",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "University of Washington",
+      "uscis_employer_name": "UNIVERSITY OF WASHINGTON",
+      "total_opt_or_stem_opt_participants": "532",
+      "h1b_initial_approvals": "98",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "Northwestern University",
+      "uscis_employer_name": "NORTHWESTERN UNIVERSITY",
+      "total_opt_or_stem_opt_participants": "527",
+      "h1b_initial_approvals": "112",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "BEACONFIRE SOLUTION INC.",
+      "uscis_employer_name": "BEACONFIRE SOLUTION INC",
+      "total_opt_or_stem_opt_participants": "469",
+      "h1b_initial_approvals": "3",
+      "display_match_type": "formatting"
+    },
+    {
+      "employer_name": "Antra, Inc",
+      "uscis_employer_name": "ANTRA INC",
+      "total_opt_or_stem_opt_participants": "448",
+      "h1b_initial_approvals": "32",
+      "display_match_type": "formatting"
+    },
+    {
+      "employer_name": "Washington University in St. Louis",
+      "uscis_employer_name": "WASHINGTON UNIVERSITY IN ST LOUIS",
+      "total_opt_or_stem_opt_participants": "445",
+      "h1b_initial_approvals": "201",
+      "display_match_type": "formatting"
+    },
+    {
+      "employer_name": "Cornell University",
+      "uscis_employer_name": "CORNELL UNIVERSITY",
+      "total_opt_or_stem_opt_participants": "423",
+      "h1b_initial_approvals": "91",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "Purdue University",
+      "uscis_employer_name": "PURDUE UNIVERSITY",
+      "total_opt_or_stem_opt_participants": "422",
+      "h1b_initial_approvals": "112",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "Carnegie Mellon University",
+      "uscis_employer_name": "CARNEGIE MELLON UNIVERSITY",
+      "total_opt_or_stem_opt_participants": "416",
+      "h1b_initial_approvals": "46",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "SLESHA INC",
+      "uscis_employer_name": "SLESHA INC",
+      "total_opt_or_stem_opt_participants": "399",
+      "h1b_initial_approvals": "2",
+      "display_match_type": "verbatim"
+    },
+    {
+      "employer_name": "Northeastern University",
+      "uscis_employer_name": "NORTHEASTERN UNIVERSITY",
+      "total_opt_or_stem_opt_participants": "399",
+      "h1b_initial_approvals": "33",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "SQUAD SOFTWARE INC",
+      "uscis_employer_name": "SQUAD SOFTWARE INC",
+      "total_opt_or_stem_opt_participants": "394",
+      "h1b_initial_approvals": "33",
+      "display_match_type": "verbatim"
+    },
+    {
+      "employer_name": "University of Utah",
+      "uscis_employer_name": "UNIVERSITY OF UTAH",
+      "total_opt_or_stem_opt_participants": "370",
+      "h1b_initial_approvals": "98",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "Eli Lilly and Company",
+      "uscis_employer_name": "ELI LILLY AND COMPANY",
+      "total_opt_or_stem_opt_participants": "370",
+      "h1b_initial_approvals": "91",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "University of Pittsburgh",
+      "uscis_employer_name": "UNIVERSITY OF PITTSBURGH",
+      "total_opt_or_stem_opt_participants": "362",
+      "h1b_initial_approvals": "136",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "INFINITE COMPUTER SOLUTIONS INC",
+      "uscis_employer_name": "INFINITE COMPUTER SOLUTIONS INC",
+      "total_opt_or_stem_opt_participants": "357",
+      "h1b_initial_approvals": "42",
+      "display_match_type": "verbatim"
+    },
+    {
+      "employer_name": "Emory University",
+      "uscis_employer_name": "EMORY UNIVERSITY",
+      "total_opt_or_stem_opt_participants": "353",
+      "h1b_initial_approvals": "133",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "Bain & Company, Inc.",
+      "uscis_employer_name": "BAIN AND COMPANY INC",
+      "total_opt_or_stem_opt_participants": "346",
+      "h1b_initial_approvals": "33",
+      "display_match_type": "formatting"
+    },
+    {
+      "employer_name": "Georgia Institute of Technology",
+      "uscis_employer_name": "GEORGIA INSTITUTE OF TECHNOLOGY",
+      "total_opt_or_stem_opt_participants": "344",
+      "h1b_initial_approvals": "53",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "TETRA COMPUTING LLC",
+      "uscis_employer_name": "TETRA COMPUTING LLC",
+      "total_opt_or_stem_opt_participants": "333",
+      "h1b_initial_approvals": "2",
+      "display_match_type": "verbatim"
+    },
+    {
+      "employer_name": "SAS INFO INC",
+      "uscis_employer_name": "SAS INFO INC",
+      "total_opt_or_stem_opt_participants": "325",
+      "h1b_initial_approvals": "1",
+      "display_match_type": "verbatim"
+    },
+    {
+      "employer_name": "CLOUDNINETEK LLC",
+      "uscis_employer_name": "CLOUDNINETEK LLC",
+      "total_opt_or_stem_opt_participants": "314",
+      "h1b_initial_approvals": "5",
+      "display_match_type": "verbatim"
+    },
+    {
+      "employer_name": "MG CLOUD TECHNOLOGIES LLC",
+      "uscis_employer_name": "MG CLOUD TECHNOLOGIES LLC",
+      "total_opt_or_stem_opt_participants": "313",
+      "h1b_initial_approvals": "9",
+      "display_match_type": "verbatim"
+    },
+    {
+      "employer_name": "Shrive Solutions LLC",
+      "uscis_employer_name": "SHRIVE SOLUTIONS LLC",
+      "total_opt_or_stem_opt_participants": "280",
+      "h1b_initial_approvals": "2",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "George Mason University",
+      "uscis_employer_name": "GEORGE MASON UNIVERSITY",
+      "total_opt_or_stem_opt_participants": "272",
+      "h1b_initial_approvals": "17",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "Intellectt Inc",
+      "uscis_employer_name": "INTELLECTT INC",
+      "total_opt_or_stem_opt_participants": "272",
+      "h1b_initial_approvals": "19",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "BATTELLE MEMORIAL INSTITUTE",
+      "uscis_employer_name": "BATTELLE MEMORIAL INSTITUTE",
+      "total_opt_or_stem_opt_participants": "259",
+      "h1b_initial_approvals": "50",
+      "display_match_type": "verbatim"
+    },
+    {
+      "employer_name": "TEKSOLVE IT SOLUTIONS LLC",
+      "uscis_employer_name": "TEKSOLVE IT SOLUTIONS LLC",
+      "total_opt_or_stem_opt_participants": "249",
+      "h1b_initial_approvals": "7",
+      "display_match_type": "verbatim"
+    },
+    {
+      "employer_name": "ARTIFICIAL INVENTIONS LLC",
+      "uscis_employer_name": "ARTIFICIAL INVENTIONS LLC",
+      "total_opt_or_stem_opt_participants": "248",
+      "h1b_initial_approvals": "3",
+      "display_match_type": "verbatim"
+    },
+    {
+      "employer_name": "ANALOG DEVICES INC",
+      "uscis_employer_name": "ANALOG DEVICES INC",
+      "total_opt_or_stem_opt_participants": "231",
+      "h1b_initial_approvals": "59",
+      "display_match_type": "verbatim"
+    },
+    {
+      "employer_name": "PROXIMATE TECHNOLOGIES INC",
+      "uscis_employer_name": "PROXIMATE TECHNOLOGIES INC",
+      "total_opt_or_stem_opt_participants": "227",
+      "h1b_initial_approvals": "2",
+      "display_match_type": "verbatim"
+    },
+    {
+      "employer_name": "DISH NETWORK LLC",
+      "uscis_employer_name": "DISH NETWORK LLC",
+      "total_opt_or_stem_opt_participants": "222",
+      "h1b_initial_approvals": "35",
+      "display_match_type": "verbatim"
+    },
+    {
+      "employer_name": "University of Houston",
+      "uscis_employer_name": "UNIVERSITY OF HOUSTON",
+      "total_opt_or_stem_opt_participants": "213",
+      "h1b_initial_approvals": "39",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "PSQUARE TECHNOLOGIES LLC",
+      "uscis_employer_name": "PSQUARE TECHNOLOGIES LLC",
+      "total_opt_or_stem_opt_participants": "201",
+      "h1b_initial_approvals": "14",
+      "display_match_type": "verbatim"
+    },
+    {
+      "employer_name": "Georgetown University",
+      "uscis_employer_name": "GEORGETOWN UNIVERSITY",
+      "total_opt_or_stem_opt_participants": "200",
+      "h1b_initial_approvals": "34",
+      "display_match_type": "case_space"
+    },
+    {
+      "employer_name": "TUFTS UNIVERSITY",
+      "uscis_employer_name": "TUFTS UNIVERSITY",
+      "total_opt_or_stem_opt_participants": "198",
+      "h1b_initial_approvals": "30",
+      "display_match_type": "verbatim"
+    },
+    {
+      "employer_name": "Brown University",
+      "uscis_employer_name": "BROWN UNIVERSITY",
+      "total_opt_or_stem_opt_participants": "194",
+      "h1b_initial_approvals": "35",
+      "display_match_type": "case_space"
+    }
+  ],
+  "wage_data_values": [],
+  "wage_data_status": "unavailable; no marks or numeric wage scale shown"
+}

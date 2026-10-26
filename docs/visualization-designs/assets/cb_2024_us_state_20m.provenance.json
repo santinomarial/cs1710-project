@@ -1,0 +1,8 @@
+{
+  "title": "2024 Census cartographic boundaries: state and equivalent entities, 1:20,000,000 KML",
+  "url": "https://www2.census.gov/geo/tiger/GENZ2024/kml/cb_2024_us_state_20m.zip",
+  "documentation_url": "https://www.census.gov/geographies/mapping-files/2024/geo/carto-boundary-file.html",
+  "retrieved_at_utc": "2026-10-26T02:18:17.972767+00:00",
+  "sha256": "37337db59415f010c594fba96a48aa6e950e633dc0e555cc7b1ce8edd794c673",
+  "usage": "Reference geometry for static documentation only; no analytical observations. Original archived ZIP unchanged."
+}

@@ -1,0 +1,29 @@
+{
+  "name": "international-talent-cs1710",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "data:download": "python3 scripts/download.py",
+    "data:clean": "python3 scripts/pipeline.py",
+    "test:data": "python3 -m unittest discover -s tests -v",
+    "test:charts": "node --test tests/*.test.js",
+    "test": "npm run test:data && npm run test:charts",
+    "test:deployment": "node scripts/verify-pages.mjs"
+  },
+  "dependencies": {
+    "d3": "7.9.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.1.2",
+    "vite": "8.3.5"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

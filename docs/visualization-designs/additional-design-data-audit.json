@@ -1,0 +1,1013 @@
+{
+  "status": "Two static, unimplemented design drafts; no application code",
+  "input_sha256": {
+    "data/processed/uscis_fy2025_records.csv": "90702c2d7f0cf3c992a94340d2f56fc8a53385a0a9067ac55990020b20889020",
+    "data/processed/fields_of_study.csv": "001f55dcc24a537e06f0a5fec931bbf782e5a6ddd6e5844ab5c4ce140bcec82f",
+    "data/raw/Employer Information (1).csv": "49299055b254ab1f950c9f86e43c548becacfba6f151bb9e345f61d6ddd6ec37",
+    "data/raw/open_doors_fields.xlsx": "fd316e2efe9852507968d32f18372ec6fe373b3931ffe866d8f2d8b823cfcb57",
+    "data/processed/source_notes.json": "0e3d90d81bc999cec8b6d46061bcd9a4369eb4fe0406820cb5a7975bea86a8ec",
+    "docs/visualization-designs/assets/cb_2024_us_state_20m.zip": "37337db59415f010c594fba96a48aa6e950e633dc0e555cc7b1ce8edd794c673"
+  },
+  "map": {
+    "row_count": 62415,
+    "unique_record_ids": 62415,
+    "source_lines_complete": true,
+    "raw_state_components_equal_processed": true,
+    "national_initial": 114804,
+    "new": 113458,
+    "concurrent": 1346,
+    "mapped_50_states_and_dc": 114396,
+    "territories": 385,
+    "unlocated": 23,
+    "state_totals": {
+      "": {
+        "initial": 22,
+        "new": 22,
+        "concurrent": 0,
+        "records": 49
+      },
+      "AA": {
+        "initial": 0,
+        "new": 0,
+        "concurrent": 0,
+        "records": 1
+      },
+      "AK": {
+        "initial": 129,
+        "new": 128,
+        "concurrent": 1,
+        "records": 58
+      },
+      "AL": {
+        "initial": 456,
+        "new": 429,
+        "concurrent": 27,
+        "records": 289
+      },
+      "AR": {
+        "initial": 844,
+        "new": 839,
+        "concurrent": 5,
+        "records": 215
+      },
+      "AS": {
+        "initial": 0,
+        "new": 0,
+        "concurrent": 0,
+        "records": 1
+      },
+      "AZ": {
+        "initial": 1821,
+        "new": 1805,
+        "concurrent": 16,
+        "records": 838
+      },
+      "CA": {
+        "initial": 21552,
+        "new": 21350,
+        "concurrent": 202,
+        "records": 11134
+      },
+      "CO": {
+        "initial": 983,
+        "new": 982,
+        "concurrent": 1,
+        "records": 677
+      },
+      "CT": {
+        "initial": 1011,
+        "new": 993,
+        "concurrent": 18,
+        "records": 694
+      },
+      "DC": {
+        "initial": 546,
+        "new": 540,
+        "concurrent": 6,
+        "records": 538
+      },
+      "DE": {
+        "initial": 532,
+        "new": 522,
+        "concurrent": 10,
+        "records": 392
+      },
+      "FL": {
+        "initial": 3933,
+        "new": 3894,
+        "concurrent": 39,
+        "records": 2881
+      },
+      "GA": {
+        "initial": 3441,
+        "new": 3406,
+        "concurrent": 35,
+        "records": 2118
+      },
+      "GU": {
+        "initial": 312,
+        "new": 312,
+        "concurrent": 0,
+        "records": 154
+      },
+      "HI": {
+        "initial": 85,
+        "new": 84,
+        "concurrent": 1,
+        "records": 70
+      },
+      "IA": {
+        "initial": 533,
+        "new": 529,
+        "concurrent": 4,
+        "records": 301
+      },
+      "ID": {
+        "initial": 345,
+        "new": 345,
+        "concurrent": 0,
+        "records": 97
+      },
+      "IL": {
+        "initial": 5341,
+        "new": 5280,
+        "concurrent": 61,
+        "records": 3014
+      },
+      "IN": {
+        "initial": 981,
+        "new": 970,
+        "concurrent": 11,
+        "records": 577
+      },
+      "KS": {
+        "initial": 527,
+        "new": 512,
+        "concurrent": 15,
+        "records": 352
+      },
+      "KY": {
+        "initial": 342,
+        "new": 332,
+        "concurrent": 10,
+        "records": 266
+      },
+      "LA": {
+        "initial": 461,
+        "new": 454,
+        "concurrent": 7,
+        "records": 254
+      },
+      "MA": {
+        "initial": 4870,
+        "new": 4784,
+        "concurrent": 86,
+        "records": 2884
+      },
+      "MD": {
+        "initial": 2432,
+        "new": 2421,
+        "concurrent": 11,
+        "records": 1177
+      },
+      "ME": {
+        "initial": 130,
+        "new": 128,
+        "concurrent": 2,
+        "records": 84
+      },
+      "MI": {
+        "initial": 2825,
+        "new": 2788,
+        "concurrent": 37,
+        "records": 1982
+      },
+      "MN": {
+        "initial": 1361,
+        "new": 1341,
+        "concurrent": 20,
+        "records": 814
+      },
+      "MO": {
+        "initial": 1250,
+        "new": 1234,
+        "concurrent": 16,
+        "records": 725
+      },
+      "MP": {
+        "initial": 28,
+        "new": 28,
+        "concurrent": 0,
+        "records": 29
+      },
+      "MS": {
+        "initial": 225,
+        "new": 223,
+        "concurrent": 2,
+        "records": 118
+      },
+      "MT": {
+        "initial": 86,
+        "new": 84,
+        "concurrent": 2,
+        "records": 58
+      },
+      "NC": {
+        "initial": 2814,
+        "new": 2800,
+        "concurrent": 14,
+        "records": 1426
+      },
+      "ND": {
+        "initial": 183,
+        "new": 180,
+        "concurrent": 3,
+        "records": 114
+      },
+      "NE": {
+        "initial": 440,
+        "new": 426,
+        "concurrent": 14,
+        "records": 269
+      },
+      "NH": {
+        "initial": 197,
+        "new": 190,
+        "concurrent": 7,
+        "records": 203
+      },
+      "NJ": {
+        "initial": 7729,
+        "new": 7639,
+        "concurrent": 90,
+        "records": 3827
+      },
+      "NM": {
+        "initial": 382,
+        "new": 378,
+        "concurrent": 4,
+        "records": 173
+      },
+      "NV": {
+        "initial": 265,
+        "new": 264,
+        "concurrent": 1,
+        "records": 280
+      },
+      "NY": {
+        "initial": 11436,
+        "new": 11321,
+        "concurrent": 115,
+        "records": 6699
+      },
+      "OH": {
+        "initial": 2172,
+        "new": 2137,
+        "concurrent": 35,
+        "records": 1283
+      },
+      "OK": {
+        "initial": 403,
+        "new": 392,
+        "concurrent": 11,
+        "records": 268
+      },
+      "OR": {
+        "initial": 394,
+        "new": 389,
+        "concurrent": 5,
+        "records": 327
+      },
+      "PA": {
+        "initial": 3262,
+        "new": 3227,
+        "concurrent": 35,
+        "records": 1883
+      },
+      "PR": {
+        "initial": 31,
+        "new": 31,
+        "concurrent": 0,
+        "records": 40
+      },
+      "RI": {
+        "initial": 442,
+        "new": 439,
+        "concurrent": 3,
+        "records": 157
+      },
+      "SC": {
+        "initial": 536,
+        "new": 531,
+        "concurrent": 5,
+        "records": 431
+      },
+      "SD": {
+        "initial": 348,
+        "new": 348,
+        "concurrent": 0,
+        "records": 110
+      },
+      "TN": {
+        "initial": 1534,
+        "new": 1502,
+        "concurrent": 32,
+        "records": 697
+      },
+      "TX": {
+        "initial": 12618,
+        "new": 12466,
+        "concurrent": 152,
+        "records": 6869
+      },
+      "UT": {
+        "initial": 517,
+        "new": 509,
+        "concurrent": 8,
+        "records": 475
+      },
+      "VA": {
+        "initial": 7581,
+        "new": 7518,
+        "concurrent": 63,
+        "records": 2138
+      },
+      "VI": {
+        "initial": 14,
+        "new": 14,
+        "concurrent": 0,
+        "records": 14
+      },
+      "VT": {
+        "initial": 103,
+        "new": 89,
+        "concurrent": 14,
+        "records": 65
+      },
+      "WA": {
+        "initial": 2874,
+        "new": 2863,
+        "concurrent": 11,
+        "records": 1127
+      },
+      "WI": {
+        "initial": 759,
+        "new": 751,
+        "concurrent": 8,
+        "records": 525
+      },
+      "WV": {
+        "initial": 220,
+        "new": 149,
+        "concurrent": 71,
+        "records": 80
+      },
+      "WY": {
+        "initial": 145,
+        "new": 145,
+        "concurrent": 0,
+        "records": 90
+      },
+      "XX": {
+        "initial": 1,
+        "new": 1,
+        "concurrent": 0,
+        "records": 4
+      }
+    },
+    "selected_state": "CA",
+    "selected_share_percent": 18.772865056966655,
+    "tooltip_state": "TX",
+    "tooltip_share_percent": 10.99090624020069,
+    "geometry_provenance": {
+      "title": "2024 Census cartographic boundaries: state and equivalent entities, 1:20,000,000 KML",
+      "url": "https://www2.census.gov/geo/tiger/GENZ2024/kml/cb_2024_us_state_20m.zip",
+      "documentation_url": "https://www.census.gov/geographies/mapping-files/2024/geo/carto-boundary-file.html",
+      "retrieved_at_utc": "2026-10-26T02:18:17.972767+00:00",
+      "sha256": "37337db59415f010c594fba96a48aa6e950e633dc0e555cc7b1ce8edd794c673",
+      "usage": "Reference geometry for static documentation only; no analytical observations. Original archived ZIP unchanged."
+    },
+    "mapped_codes": [
+      "AK",
+      "AL",
+      "AR",
+      "AZ",
+      "CA",
+      "CO",
+      "CT",
+      "DC",
+      "DE",
+      "FL",
+      "GA",
+      "HI",
+      "IA",
+      "ID",
+      "IL",
+      "IN",
+      "KS",
+      "KY",
+      "LA",
+      "MA",
+      "MD",
+      "ME",
+      "MI",
+      "MN",
+      "MO",
+      "MS",
+      "MT",
+      "NC",
+      "ND",
+      "NE",
+      "NH",
+      "NJ",
+      "NM",
+      "NV",
+      "NY",
+      "OH",
+      "OK",
+      "OR",
+      "PA",
+      "RI",
+      "SC",
+      "SD",
+      "TN",
+      "TX",
+      "UT",
+      "VA",
+      "VT",
+      "WA",
+      "WI",
+      "WV",
+      "WY"
+    ],
+    "scale_domain": [
+      0,
+      21552
+    ]
+  },
+  "fields": {
+    "rows": 405,
+    "source_workbook_cells_verified": 405,
+    "missing_cells": 0,
+    "year_count": 27,
+    "field_count": 15,
+    "academic_years": [
+      "1998/99",
+      "1999/00",
+      "2000/01",
+      "2001/02",
+      "2002/03",
+      "2003/04",
+      "2004/05",
+      "2005/06",
+      "2006/07",
+      "2007/08",
+      "2008/09",
+      "2009/10",
+      "2010/11",
+      "2011/12",
+      "2012/13",
+      "2013/14",
+      "2014/15",
+      "2015/16",
+      "2016/17",
+      "2017/18",
+      "2018/19",
+      "2019/20",
+      "2020/21",
+      "2021/22",
+      "2022/23",
+      "2023/24",
+      "2024/25"
+    ],
+    "field_order": [
+      "Math and Computer Science",
+      "Engineering",
+      "Business and Management",
+      "Physical and Life Sciences",
+      "Social Sciences",
+      "Other Fields of Study",
+      "Fine and Applied Arts",
+      "Health Professions",
+      "Communications and Journalism",
+      "Humanities",
+      "Education",
+      "Agriculture",
+      "Legal Studies and Law Enforcement",
+      "Intensive English",
+      "Undeclared"
+    ],
+    "all_plotted_values": {
+      "1998/99": {
+        "Agriculture": 7949,
+        "Business and Management": 101360,
+        "Communications and Journalism": 11234,
+        "Education": 13261,
+        "Engineering": 73014,
+        "Fine and Applied Arts": 31486,
+        "Health Professions": 20260,
+        "Humanities": 16295,
+        "Intensive English": 21030,
+        "Legal Studies and Law Enforcement": 5403,
+        "Math and Computer Science": 48236,
+        "Physical and Life Sciences": 37055,
+        "Social Sciences": 37255,
+        "Other Fields of Study": 36128,
+        "Undeclared": 30970
+      },
+      "1999/00": {
+        "Agriculture": 7729,
+        "Business and Management": 102492,
+        "Communications and Journalism": 11277,
+        "Education": 12885,
+        "Engineering": 76834,
+        "Fine and Applied Arts": 32479,
+        "Health Professions": 21625,
+        "Humanities": 16686,
+        "Intensive English": 21015,
+        "Legal Studies and Law Enforcement": 6382,
+        "Math and Computer Science": 57266,
+        "Physical and Life Sciences": 37420,
+        "Social Sciences": 38629,
+        "Other Fields of Study": 39207,
+        "Undeclared": 32799
+      },
+      "2000/01": {
+        "Agriculture": 7200,
+        "Business and Management": 105214,
+        "Communications and Journalism": 12219,
+        "Education": 14053,
+        "Engineering": 83396,
+        "Fine and Applied Arts": 34220,
+        "Health Professions": 22430,
+        "Humanities": 16123,
+        "Intensive English": 23011,
+        "Legal Studies and Law Enforcement": 6456,
+        "Math and Computer Science": 67825,
+        "Physical and Life Sciences": 38396,
+        "Social Sciences": 38940,
+        "Other Fields of Study": 42606,
+        "Undeclared": 35779
+      },
+      "2001/02": {
+        "Agriculture": 7950,
+        "Business and Management": 113495,
+        "Communications and Journalism": 12595,
+        "Education": 15709,
+        "Engineering": 88258,
+        "Fine and Applied Arts": 33978,
+        "Health Professions": 24037,
+        "Humanities": 18367,
+        "Intensive English": 21237,
+        "Legal Studies and Law Enforcement": 7301,
+        "Math and Computer Science": 76736,
+        "Physical and Life Sciences": 41417,
+        "Social Sciences": 41241,
+        "Other Fields of Study": 44628,
+        "Undeclared": 36048
+      },
+      "2002/03": {
+        "Agriculture": 6763,
+        "Business and Management": 113990,
+        "Communications and Journalism": 12726,
+        "Education": 16004,
+        "Engineering": 96574,
+        "Fine and Applied Arts": 31018,
+        "Health Professions": 28120,
+        "Humanities": 19153,
+        "Intensive English": 17620,
+        "Legal Studies and Law Enforcement": 7134,
+        "Math and Computer Science": 71926,
+        "Physical and Life Sciences": 43549,
+        "Social Sciences": 42415,
+        "Other Fields of Study": 42934,
+        "Undeclared": 36395
+      },
+      "2003/04": {
+        "Agriculture": 7292,
+        "Business and Management": 107909,
+        "Communications and Journalism": 11439,
+        "Education": 15909,
+        "Engineering": 95225,
+        "Fine and Applied Arts": 31882,
+        "Health Professions": 25749,
+        "Humanities": 16622,
+        "Intensive English": 15006,
+        "Legal Studies and Law Enforcement": 7039,
+        "Math and Computer Science": 67693,
+        "Physical and Life Sciences": 44607,
+        "Social Sciences": 50464,
+        "Other Fields of Study": 46358,
+        "Undeclared": 29313
+      },
+      "2004/05": {
+        "Agriculture": 7519,
+        "Business and Management": 98975,
+        "Communications and Journalism": 10955,
+        "Education": 15697,
+        "Engineering": 92970,
+        "Fine and Applied Arts": 28063,
+        "Health Professions": 26455,
+        "Humanities": 15850,
+        "Intensive English": 16133,
+        "Legal Studies and Law Enforcement": 7152,
+        "Math and Computer Science": 50747,
+        "Physical and Life Sciences": 49499,
+        "Social Sciences": 42263,
+        "Other Fields of Study": 46347,
+        "Undeclared": 27982
+      },
+      "2005/06": {
+        "Agriculture": 7883,
+        "Business and Management": 99382,
+        "Communications and Journalism": 12090,
+        "Education": 16546,
+        "Engineering": 88663,
+        "Fine and Applied Arts": 29509,
+        "Health Professions": 27704,
+        "Humanities": 16480,
+        "Intensive English": 17239,
+        "Legal Studies and Law Enforcement": 6985,
+        "Math and Computer Science": 45518,
+        "Physical and Life Sciences": 50168,
+        "Social Sciences": 42235,
+        "Other Fields of Study": 44938,
+        "Undeclared": 17888
+      },
+      "2006/07": {
+        "Agriculture": 7461,
+        "Business and Management": 102506,
+        "Communications and Journalism": 11494,
+        "Education": 16825,
+        "Engineering": 89179,
+        "Fine and Applied Arts": 29588,
+        "Health Professions": 28723,
+        "Humanities": 16189,
+        "Intensive English": 22417,
+        "Legal Studies and Law Enforcement": 7260,
+        "Math and Computer Science": 46019,
+        "Physical and Life Sciences": 51863,
+        "Social Sciences": 44983,
+        "Other Fields of Study": 45049,
+        "Undeclared": 19545
+      },
+      "2007/08": {
+        "Agriculture": 8945,
+        "Business and Management": 110041,
+        "Communications and Journalism": 12135,
+        "Education": 17775,
+        "Engineering": 96189,
+        "Fine and Applied Arts": 31727,
+        "Health Professions": 29585,
+        "Humanities": 17460,
+        "Intensive English": 25856,
+        "Legal Studies and Law Enforcement": 7463,
+        "Math and Computer Science": 46313,
+        "Physical and Life Sciences": 52867,
+        "Social Sciences": 45535,
+        "Other Fields of Study": 45933,
+        "Undeclared": 19215
+      },
+      "2008/09": {
+        "Agriculture": 8961,
+        "Business and Management": 137495,
+        "Communications and Journalism": 12966,
+        "Education": 18120,
+        "Engineering": 119338,
+        "Fine and Applied Arts": 34854,
+        "Health Professions": 35446,
+        "Humanities": 19179,
+        "Intensive English": 28524,
+        "Legal Studies and Law Enforcement": 9789,
+        "Math and Computer Science": 56367,
+        "Physical and Life Sciences": 61699,
+        "Social Sciences": 52631,
+        "Other Fields of Study": 55303,
+        "Undeclared": 20944
+      },
+      "2009/10": {
+        "Agriculture": 10288,
+        "Business and Management": 144294,
+        "Communications and Journalism": 14412,
+        "Education": 18301,
+        "Engineering": 127444,
+        "Fine and Applied Arts": 35807,
+        "Health Professions": 32499,
+        "Humanities": 17993,
+        "Intensive English": 26059,
+        "Legal Studies and Law Enforcement": 10039,
+        "Math and Computer Science": 60800,
+        "Physical and Life Sciences": 61311,
+        "Social Sciences": 54853,
+        "Other Fields of Study": 58118,
+        "Undeclared": 18705
+      },
+      "2010/11": {
+        "Agriculture": 9888,
+        "Business and Management": 154452,
+        "Communications and Journalism": 14762,
+        "Education": 16933,
+        "Engineering": 135616,
+        "Fine and Applied Arts": 37237,
+        "Health Professions": 32821,
+        "Humanities": 16263,
+        "Intensive English": 32306,
+        "Legal Studies and Law Enforcement": 10749,
+        "Math and Computer Science": 64588,
+        "Physical and Life Sciences": 63471,
+        "Social Sciences": 58345,
+        "Other Fields of Study": 55948,
+        "Undeclared": 19898
+      },
+      "2011/12": {
+        "Agriculture": 9750,
+        "Business and Management": 164943,
+        "Communications and Journalism": 15707,
+        "Education": 17200,
+        "Engineering": 141313,
+        "Fine and Applied Arts": 41710,
+        "Health Professions": 29822,
+        "Humanities": 16294,
+        "Intensive English": 38887,
+        "Legal Studies and Law Enforcement": 11185,
+        "Math and Computer Science": 71364,
+        "Physical and Life Sciences": 66007,
+        "Social Sciences": 60974,
+        "Other Fields of Study": 57024,
+        "Undeclared": 22315
+      },
+      "2012/13": {
+        "Agriculture": 10463,
+        "Business and Management": 177741,
+        "Communications and Journalism": 17497,
+        "Education": 17011,
+        "Engineering": 154239,
+        "Fine and Applied Arts": 45850,
+        "Health Professions": 31471,
+        "Humanities": 17121,
+        "Intensive English": 39990,
+        "Legal Studies and Law Enforcement": 11298,
+        "Math and Computer Science": 77560,
+        "Physical and Life Sciences": 69152,
+        "Social Sciences": 67786,
+        "Other Fields of Study": 57510,
+        "Undeclared": 24955
+      },
+      "2013/14": {
+        "Agriculture": 10635,
+        "Business and Management": 188179,
+        "Communications and Journalism": 18678,
+        "Education": 17879,
+        "Engineering": 170189,
+        "Fine and Applied Arts": 51195,
+        "Health Professions": 31954,
+        "Humanities": 17930,
+        "Intensive English": 43456,
+        "Legal Studies and Law Enforcement": 12702,
+        "Math and Computer Science": 91434,
+        "Physical and Life Sciences": 70479,
+        "Social Sciences": 72390,
+        "Other Fields of Study": 63257,
+        "Undeclared": 25695
+      },
+      "2014/15": {
+        "Agriculture": 12278,
+        "Business and Management": 197258,
+        "Communications and Journalism": 20161,
+        "Education": 17675,
+        "Engineering": 196750,
+        "Fine and Applied Arts": 56758,
+        "Health Professions": 33399,
+        "Humanities": 17504,
+        "Intensive English": 49233,
+        "Legal Studies and Law Enforcement": 13778,
+        "Math and Computer Science": 112950,
+        "Physical and Life Sciences": 73838,
+        "Social Sciences": 75951,
+        "Other Fields of Study": 73176,
+        "Undeclared": 24217
+      },
+      "2015/16": {
+        "Agriculture": 12318,
+        "Business and Management": 200312,
+        "Communications and Journalism": 21160,
+        "Education": 19483,
+        "Engineering": 216932,
+        "Fine and Applied Arts": 59736,
+        "Health Professions": 33947,
+        "Humanities": 17664,
+        "Intensive English": 40877,
+        "Legal Studies and Law Enforcement": 15077,
+        "Math and Computer Science": 141651,
+        "Physical and Life Sciences": 75385,
+        "Social Sciences": 81304,
+        "Other Fields of Study": 81318,
+        "Undeclared": 26675
+      },
+      "2016/17": {
+        "Agriculture": 12602,
+        "Business and Management": 200754,
+        "Communications and Journalism": 21913,
+        "Education": 17993,
+        "Engineering": 230711,
+        "Fine and Applied Arts": 61506,
+        "Health Professions": 34395,
+        "Humanities": 17561,
+        "Intensive English": 30309,
+        "Legal Studies and Law Enforcement": 15306,
+        "Math and Computer Science": 167180,
+        "Physical and Life Sciences": 76838,
+        "Social Sciences": 83046,
+        "Other Fields of Study": 87577,
+        "Undeclared": 21131
+      },
+      "2017/18": {
+        "Agriculture": 12473,
+        "Business and Management": 196054,
+        "Communications and Journalism": 22824,
+        "Education": 17615,
+        "Engineering": 232710,
+        "Fine and Applied Arts": 63795,
+        "Health Professions": 35169,
+        "Humanities": 17040,
+        "Intensive English": 25845,
+        "Legal Studies and Law Enforcement": 16894,
+        "Math and Computer Science": 186003,
+        "Physical and Life Sciences": 78700,
+        "Social Sciences": 83708,
+        "Other Fields of Study": 88720,
+        "Undeclared": 17242
+      },
+      "2018/19": {
+        "Agriculture": 13754,
+        "Business and Management": 182170,
+        "Communications and Journalism": 24017,
+        "Education": 16786,
+        "Engineering": 230780,
+        "Fine and Applied Arts": 63097,
+        "Health Professions": 35446,
+        "Humanities": 17013,
+        "Intensive English": 22026,
+        "Legal Studies and Law Enforcement": 16483,
+        "Math and Computer Science": 203461,
+        "Physical and Life Sciences": 81580,
+        "Social Sciences": 84320,
+        "Other Fields of Study": 86057,
+        "Undeclared": 18309
+      },
+      "2019/20": {
+        "Agriculture": 13134,
+        "Business and Management": 174470,
+        "Communications and Journalism": 23925,
+        "Education": 15700,
+        "Engineering": 220542,
+        "Fine and Applied Arts": 64501,
+        "Health Professions": 34934,
+        "Humanities": 16992,
+        "Intensive English": 21301,
+        "Legal Studies and Law Enforcement": 16269,
+        "Math and Computer Science": 205207,
+        "Physical and Life Sciences": 81971,
+        "Social Sciences": 84440,
+        "Other Fields of Study": 81837,
+        "Undeclared": 20273
+      },
+      "2020/21": {
+        "Agriculture": 12360,
+        "Business and Management": 145658,
+        "Communications and Journalism": 20613,
+        "Education": 15402,
+        "Engineering": 190590,
+        "Fine and Applied Arts": 51101,
+        "Health Professions": 32468,
+        "Humanities": 14702,
+        "Intensive English": 8355,
+        "Legal Studies and Law Enforcement": 11684,
+        "Math and Computer Science": 182106,
+        "Physical and Life Sciences": 75029,
+        "Social Sciences": 76419,
+        "Other Fields of Study": 64042,
+        "Undeclared": 13566
+      },
+      "2021/22": {
+        "Agriculture": 12725,
+        "Business and Management": 147293,
+        "Communications and Journalism": 19702,
+        "Education": 15272,
+        "Engineering": 188194,
+        "Fine and Applied Arts": 51136,
+        "Health Professions": 32052,
+        "Humanities": 15204,
+        "Intensive English": 7358,
+        "Legal Studies and Law Enforcement": 13793,
+        "Math and Computer Science": 200301,
+        "Physical and Life Sciences": 78712,
+        "Social Sciences": 78770,
+        "Other Fields of Study": 70948,
+        "Undeclared": 17059
+      },
+      "2022/23": {
+        "Agriculture": 13461,
+        "Business and Management": 157281,
+        "Communications and Journalism": 21990,
+        "Education": 15897,
+        "Engineering": 202801,
+        "Fine and Applied Arts": 51689,
+        "Health Professions": 34856,
+        "Humanities": 15783,
+        "Intensive English": 10404,
+        "Legal Studies and Law Enforcement": 16096,
+        "Math and Computer Science": 240230,
+        "Physical and Life Sciences": 84830,
+        "Social Sciences": 85998,
+        "Other Fields of Study": 87962,
+        "Undeclared": 17910
+      },
+      "2023/24": {
+        "Agriculture": 14307,
+        "Business and Management": 159810,
+        "Communications and Journalism": 21481,
+        "Education": 15590,
+        "Engineering": 210163,
+        "Fine and Applied Arts": 54159,
+        "Health Professions": 36615,
+        "Humanities": 15937,
+        "Intensive English": 9750,
+        "Legal Studies and Law Enforcement": 15504,
+        "Math and Computer Science": 280922,
+        "Physical and Life Sciences": 88717,
+        "Social Sciences": 84307,
+        "Other Fields of Study": 102440,
+        "Undeclared": 16988
+      },
+      "2024/25": {
+        "Agriculture": 15035,
+        "Business and Management": 159857,
+        "Communications and Journalism": 21493,
+        "Education": 16307,
+        "Engineering": 217016,
+        "Fine and Applied Arts": 49542,
+        "Health Professions": 40417,
+        "Humanities": 16388,
+        "Intensive English": 9861,
+        "Legal Studies and Law Enforcement": 15383,
+        "Math and Computer Science": 305377,
+        "Physical and Life Sciences": 95667,
+        "Social Sciences": 86008,
+        "Other Fields of Study": 113367,
+        "Undeclared": 16048
+      }
+    },
+    "denominators": {
+      "1998/99": 490936,
+      "1999/00": 514725,
+      "2000/01": 547868,
+      "2001/02": 582997,
+      "2002/03": 586321,
+      "2003/04": 572507,
+      "2004/05": 536607,
+      "2005/06": 523228,
+      "2006/07": 539101,
+      "2007/08": 567039,
+      "2008/09": 671616,
+      "2009/10": 690923,
+      "2010/11": 723277,
+      "2011/12": 764495,
+      "2012/13": 819644,
+      "2013/14": 886052,
+      "2014/15": 974926,
+      "2015/16": 1043839,
+      "2016/17": 1078822,
+      "2017/18": 1094792,
+      "2018/19": 1095299,
+      "2019/20": 1075496,
+      "2020/21": 914095,
+      "2021/22": 948519,
+      "2022/23": 1057188,
+      "2023/24": 1126690,
+      "2024/25": 1177766
+    },
+    "selected_field": "Math and Computer Science",
+    "selected_year": "2024/25",
+    "selected_count": 305377,
+    "selected_share_percent": 25.928495134007946,
+    "reporting_breaks": [
+      "2008/09",
+      "2020/21"
+    ],
+    "interpolation_across_reporting_breaks": false,
+    "imputation": false
+  },
+  "pngs": {
+    "04-h1b-geographic-map.png": {
+      "width": 3240,
+      "height": 2700,
+      "sha256": "0e9a828a075cacfd1f7c1e6e802a3a54f4f3da0e75386ae2bb88bd90c5c1a15c"
+    },
+    "05-fields-of-study-stacked-area.png": {
+      "width": 3240,
+      "height": 2700,
+      "sha256": "6b52464e5ab46678670a59320dfdf2499d0aa1c219f04937462ff0ee7c7ff48d"
+    }
+  }
+}

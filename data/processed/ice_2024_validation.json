@@ -1,0 +1,45 @@
+{
+  "source_file": "2024_Top200_Employers_OPT_STEM_OPT_Students.pdf",
+  "calendar_year": 2024,
+  "employers": 200,
+  "pages": {
+    "1": 58,
+    "2": 63,
+    "3": 63,
+    "4": 16
+  },
+  "source_caveat_verbatim": "**If a student is employed at the same Employer wile in a different program, he/she will be counted multiple times for the employer.",
+  "counting_note": "Source combined count retained independently; OPT and STEM OPT must not be added to reconstruct it. Students may be counted multiple times across programs.",
+  "missing_cells": {
+    "total_opt_or_stem_opt_participants": 0,
+    "opt_participants": 0,
+    "stem_opt_participants": 11
+  },
+  "explicit_zero_cells": {
+    "total_opt_or_stem_opt_participants": 0,
+    "opt_participants": 0,
+    "stem_opt_participants": 0
+  },
+  "extraction_checks": [
+    "Four source pages visually reviewed",
+    "All 200 grid rows agree with text-line extraction",
+    "Amazon, Google, Microsoft, Meta and Apple values checked against original page 1",
+    "Eleven blank STEM OPT cells retained; no combined counts reconstructed"
+  ],
+  "extraction_limitations": [
+    "Page 4: AMERICAN TECHNOLOGY CONSULTING L is visibly clipped in the source; retained and excluded from matching."
+  ],
+  "overlap_matches": 47,
+  "matching_status_counts": {
+    "accepted_unique_name": 47,
+    "ambiguous_multiple_name_matches": 7,
+    "ambiguous_name_scope": 7,
+    "no_candidate": 41,
+    "source_name_truncated": 1,
+    "unresolved_name_variants": 97
+  },
+  "candidate_rows": 455,
+  "match_method": "unique_normalized_full_name_no_prefix_scope_conflict_v1",
+  "comparison_label": "Employer-level comparison: calendar-2024 OPT/STEM OPT participation versus FY2025 H-1B initial approvals; not individual transitions or conversion rates.",
+  "identity_limitation": "Name-based comparison only; ICE supplies no shared tax ID, address or corporate-scope crosswalk. Does not verify a legal-entity match."
+}

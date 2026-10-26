@@ -1,0 +1,385 @@
+{
+  "status": "passed_with_source_limitations",
+  "checks": [
+    "international_enrollment.csv: nonempty, unique keys, consistent schema, provenance, valid counts",
+    "opt_growth.csv: nonempty, unique keys, consistent schema, provenance, valid counts",
+    "academic_levels.csv: nonempty, unique keys, consistent schema, provenance, valid counts",
+    "fields_of_study.csv: nonempty, unique keys, consistent schema, provenance, valid counts",
+    "h1b_employers.csv: nonempty, unique keys, consistent schema, provenance, valid counts",
+    "h1b_employer_distribution.csv: nonempty, unique keys, consistent schema, provenance, valid counts",
+    "h1b_industries.csv: nonempty, unique keys, consistent schema, provenance, valid counts",
+    "h1b_selected_petitions.csv: nonempty, unique keys, consistent schema, provenance, valid counts",
+    "opt_employers.csv: nonempty, unique keys, consistent schema, provenance, valid counts",
+    "opt_h1b_employer_overlap.csv: nonempty, unique keys, consistent schema, provenance, valid counts",
+    "opt_h1b_match_audit.csv: nonempty, unique keys, consistent schema, provenance, valid counts",
+    "opt_h1b_match_candidates.csv: nonempty, unique keys, consistent schema, provenance, valid counts",
+    "Enrolled + OPT = total in every available OPT year",
+    "OPT counts agree across workbooks except the documented one-student 1994/95 discrepancy",
+    "Pinned edition row counts and independently inspected source values match",
+    "ICE: all 200 employers across four pages agree between table and text extraction; five major-employer controls verified",
+    "ICE: eleven blank STEM OPT cells preserved; combined values never reconstructed",
+    "ICE/USCIS: only unique normalized full-name matches without prefix-scope conflicts accepted; all other candidates documented",
+    "USCIS: UTF-16 tab schema, all 62,415 sequential records, FY2025 and strict integer counts verified",
+    "USCIS: every approval/denial category conserved through employer and industry aggregation",
+    "USCIS: disjoint employer bins conserve named positive groups and initial approvals; unnamed approvals separately accounted for"
+  ],
+  "datasets": {
+    "international_enrollment.csv": {
+      "rows": 77,
+      "columns": [
+        "academic_year",
+        "start_year",
+        "enrolled_students",
+        "opt_students",
+        "total_international_students",
+        "us_higher_education_enrollment",
+        "source_year_label",
+        "source_file",
+        "source_row",
+        "source_url"
+      ]
+    },
+    "opt_growth.csv": {
+      "rows": 46,
+      "columns": [
+        "academic_year",
+        "start_year",
+        "enrolled_students",
+        "opt_students",
+        "total_international_students",
+        "us_higher_education_enrollment",
+        "source_year_label",
+        "source_file",
+        "source_row",
+        "source_url"
+      ]
+    },
+    "academic_levels.csv": {
+      "rows": 194,
+      "columns": [
+        "academic_year",
+        "academic_level",
+        "students",
+        "source_file",
+        "source_sheet",
+        "source_row",
+        "source_url"
+      ]
+    },
+    "fields_of_study.csv": {
+      "rows": 405,
+      "columns": [
+        "academic_year",
+        "field_of_study",
+        "source_category",
+        "students",
+        "classification",
+        "source_file",
+        "source_row",
+        "source_column",
+        "source_url"
+      ]
+    },
+    "h1b_employers.csv": {
+      "rows": 100,
+      "columns": [
+        "fiscal_year",
+        "employer_name",
+        "employer_key",
+        "initial_approvals",
+        "coverage",
+        "source_type",
+        "source_file",
+        "source_page",
+        "source_url"
+      ]
+    },
+    "h1b_employer_distribution.csv": {
+      "rows": 3,
+      "columns": [
+        "metric",
+        "value",
+        "unit",
+        "precision",
+        "cumulative",
+        "fiscal_year",
+        "population",
+        "source_type",
+        "source_file",
+        "source_page",
+        "source_url"
+      ]
+    },
+    "h1b_industries.csv": {
+      "rows": 20,
+      "columns": [
+        "fiscal_year",
+        "industry",
+        "initial_approvals",
+        "source_type",
+        "source_file",
+        "source_page",
+        "source_url"
+      ]
+    },
+    "h1b_selected_petitions.csv": {
+      "rows": 150,
+      "columns": [
+        "fiscal_year",
+        "employer_name",
+        "approval_type",
+        "approvals",
+        "denial_rate_percent",
+        "coverage",
+        "source_file",
+        "source_page",
+        "source_url"
+      ]
+    },
+    "uscis_fy2025_records.csv": {
+      "rows": 62415,
+      "columns": [
+        "record_id",
+        "source_line",
+        "source_row",
+        "employer_group_id",
+        "employer_name",
+        "name_status",
+        "tax_id_suffix",
+        "industry_source",
+        "naics_code",
+        "industry",
+        "petitioner_city",
+        "petitioner_state",
+        "petitioner_zip_code",
+        "new_employment_approvals",
+        "new_employment_denials",
+        "new_concurrent_approvals",
+        "new_concurrent_denials",
+        "continuation_approvals",
+        "continuation_denials",
+        "change_with_same_employer_approvals",
+        "change_with_same_employer_denials",
+        "change_of_employer_approvals",
+        "change_of_employer_denials",
+        "amended_approvals",
+        "amended_denials",
+        "initial_approvals",
+        "continuing_approvals",
+        "initial_denials",
+        "continuing_denials",
+        "fiscal_year",
+        "source_file",
+        "source_url",
+        "source_type"
+      ]
+    },
+    "uscis_fy2025_employers.csv": {
+      "rows": 55142,
+      "columns": [
+        "employer_group_id",
+        "employer_name",
+        "name_status",
+        "tax_id_suffix",
+        "identity_method",
+        "source_record_count",
+        "source_lines",
+        "naics_codes",
+        "new_employment_approvals",
+        "new_employment_denials",
+        "new_concurrent_approvals",
+        "new_concurrent_denials",
+        "continuation_approvals",
+        "continuation_denials",
+        "change_with_same_employer_approvals",
+        "change_with_same_employer_denials",
+        "change_of_employer_approvals",
+        "change_of_employer_denials",
+        "amended_approvals",
+        "amended_denials",
+        "initial_approvals",
+        "initial_denials",
+        "continuing_approvals",
+        "continuing_denials",
+        "fiscal_year",
+        "source_file",
+        "source_url",
+        "source_type"
+      ]
+    },
+    "uscis_fy2025_distribution.csv": {
+      "rows": 7,
+      "columns": [
+        "bin_order",
+        "bin_label",
+        "lower_bound",
+        "upper_bound",
+        "employer_count",
+        "initial_approvals",
+        "employer_share_percent",
+        "approval_share_percent",
+        "population_employers",
+        "population_initial_approvals",
+        "excluded_unnamed_records",
+        "excluded_unnamed_initial_approvals",
+        "population",
+        "identity_method",
+        "fiscal_year",
+        "source_file",
+        "source_url",
+        "source_type"
+      ]
+    },
+    "uscis_fy2025_industries.csv": {
+      "rows": 21,
+      "columns": [
+        "naics_code",
+        "industry",
+        "industry_status",
+        "source_record_count",
+        "new_employment_approvals",
+        "new_employment_denials",
+        "new_concurrent_approvals",
+        "new_concurrent_denials",
+        "continuation_approvals",
+        "continuation_denials",
+        "change_with_same_employer_approvals",
+        "change_with_same_employer_denials",
+        "change_of_employer_approvals",
+        "change_of_employer_denials",
+        "amended_approvals",
+        "amended_denials",
+        "initial_approvals",
+        "initial_denials",
+        "continuing_approvals",
+        "continuing_denials",
+        "fiscal_year",
+        "source_file",
+        "source_url",
+        "source_type"
+      ]
+    },
+    "uscis_fy2025_industry_comparison.csv": {
+      "rows": 21,
+      "columns": [
+        "naics_code",
+        "industry",
+        "uscis_initial_approvals",
+        "nfap_initial_approvals",
+        "difference_uscis_minus_nfap",
+        "comparison_status",
+        "nfap_source_file",
+        "nfap_source_page",
+        "nfap_source_url",
+        "fiscal_year",
+        "source_file",
+        "source_url",
+        "source_type"
+      ]
+    },
+    "opt_employers.csv": {
+      "rows": 200,
+      "columns": [
+        "source_order",
+        "employer_name",
+        "total_opt_or_stem_opt_participants",
+        "opt_participants",
+        "stem_opt_participants",
+        "calendar_year",
+        "source_type",
+        "source_file",
+        "source_page",
+        "source_table_row",
+        "source_url",
+        "name_note",
+        "counting_note"
+      ]
+    },
+    "opt_h1b_employer_overlap.csv": {
+      "rows": 47,
+      "columns": [
+        "employer_name",
+        "uscis_employer_name",
+        "uscis_employer_group_id",
+        "uscis_tax_id_suffix",
+        "total_opt_or_stem_opt_participants",
+        "opt_participants",
+        "stem_opt_participants",
+        "calendar_year",
+        "h1b_fiscal_year",
+        "h1b_new_employment_approvals",
+        "h1b_new_concurrent_approvals",
+        "h1b_initial_approvals",
+        "match_method",
+        "match_status",
+        "comparison_label",
+        "identity_limitation",
+        "counting_note",
+        "source_file",
+        "source_page",
+        "source_table_row",
+        "source_url",
+        "uscis_source_file",
+        "uscis_source_lines",
+        "uscis_source_url"
+      ]
+    },
+    "opt_h1b_match_audit.csv": {
+      "rows": 200,
+      "columns": [
+        "ice_employer_name",
+        "normalized_name",
+        "match_status",
+        "full_name_candidate_count",
+        "prefix_candidate_count",
+        "reason",
+        "calendar_year",
+        "h1b_fiscal_year",
+        "source_file",
+        "source_page",
+        "source_url",
+        "identity_limitation"
+      ]
+    },
+    "opt_h1b_match_candidates.csv": {
+      "rows": 455,
+      "columns": [
+        "ice_employer_name",
+        "uscis_employer_name",
+        "uscis_employer_group_id",
+        "tax_id_suffix",
+        "candidate_relationship",
+        "match_status",
+        "accepted",
+        "candidate_initial_approvals",
+        "candidate_source_lines",
+        "calendar_year",
+        "h1b_fiscal_year",
+        "source_file",
+        "source_page",
+        "source_url",
+        "uscis_source_file",
+        "uscis_source_url",
+        "interpretation"
+      ]
+    }
+  },
+  "unavailable": {
+    "wage_comparison.csv": "BLS and DOL downloads returned HTTP 403. Fru employer-level summaries do not supply a matched occupational sample."
+  },
+  "warnings": [
+    "IIE 1994/95 OPT counts differ: enrollment workbook 13,208; academic-level workbook 13,209. Both original values retained; opt_growth uses enrollment.",
+    "The historical NFAP extracts remain separate. The D3 distribution uses the complete supplied USCIS FY2025 export.",
+    "Employer groups use exact name plus four-digit tax suffix, not verified legal identities. Name variants remain separate; suffix collisions and missing suffixes limit identification.",
+    "11 unnamed records remain in the primary datasets; their 6 initial approvals are excluded from the named-employer histogram, not discarded from totals.",
+    "USCIS initial approvals total 114,804 versus NFAP 114,806: difference -2, unresolved. No adjustment applied.",
+    "USCIS named industries total 112,589 versus NFAP 112,599 (-10); 2,215 approvals have missing industry codes. Missing-industry records explain most but not exactly all of NFAP\u2019s 2,207 gap.",
+    "Fru HTML is archived as a reference, not ingested into wage comparisons.",
+    "Source reporting periods differ: IIE academic years, ICE calendar 2024, USCIS/NFAP fiscal 2025. Calendar 2024 and FY2025 overlap in Oct\u2013Dec 2024; these are not sequential student cohorts.",
+    "Source combined count retained independently; OPT and STEM OPT must not be added to reconstruct it. Students may be counted multiple times across programs.",
+    "Name-based comparison only; ICE supplies no shared tax ID, address or corporate-scope crosswalk. Does not verify a legal-entity match.",
+    "Employer-level comparison: calendar-2024 OPT/STEM OPT participation versus FY2025 H-1B initial approvals; not individual transitions or conversion rates.",
+    "ICE covers only its top-200 list. Eleven STEM OPT cells are blank, not zero. One employer name on page 4 is visibly clipped and retained without expansion.",
+    "The ICE pipeline is integrated; existing website placeholders and visualization code remain unchanged for the next UI phase."
+  ]
+}

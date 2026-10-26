@@ -1,0 +1,137 @@
+[
+  {
+    "file": "2024_Top200_Employers_OPT_STEM_OPT_Students.pdf",
+    "url": "https://www.ice.gov/doclib/sevis/btn/2024/2024_Top200_Employers_OPT_STEM_OPT_Students.pdf",
+    "status": "provided_local",
+    "acquisition_method": "User-downloaded official ICE PDF; copied byte-for-byte from Downloads",
+    "original_filename": "2024_Top200_Employers_OPT_STEM_OPT_Students.pdf",
+    "source_url_evidence": "macOS kMDItemWhereFroms on supplied download confirms the same ICE URL (with utm_source query)",
+    "retrieved_at_utc": null,
+    "retrieval_date": null,
+    "retrieval_note": "User download date requested; file download-date metadata absent. PDF creation/modification dates are not retrieval dates.",
+    "ingested_at_utc": "2026-10-26T01:47:43.113173+00:00",
+    "reporting_period": "Calendar year 2024 (2024-01-01 through 2024-12-31)",
+    "bytes": 483377,
+    "sha256": "e4e306a6ce75e347a2bc87b88403f5cb1eadc2707b6880c04faf259688860f3f",
+    "expected_pages": 4,
+    "expected_employers": 200,
+    "provenance_basis": "User-supplied original; official source URL confirmed by download metadata"
+  },
+  {
+    "file": "Employer Information (1).csv",
+    "url": "https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub",
+    "status": "provided_local",
+    "acquisition_method": "User-provided USCIS export; copied byte-for-byte from Downloads into data/raw",
+    "original_filename": "Employer Information (1).csv",
+    "reporting_period": "FY2025 (2024-10-01 through 2025-09-30)",
+    "filters": "All FY2025 records, per user; every supplied record verified as FY2025",
+    "retrieved_at_utc": null,
+    "ingested_at_utc": "2026-10-26T01:38:18.803613+00:00",
+    "retrieval_note": "Original export retrieval time and USCIS snapshot revision not supplied; ingestion timestamp is not retrieval time.",
+    "encoding": "UTF-16 LE with BOM",
+    "delimiter": "tab",
+    "bytes": 15342594,
+    "sha256": "49299055b254ab1f950c9f86e43c548becacfba6f151bb9e345f61d6ddd6ec37",
+    "expected_records": 62415,
+    "provenance_basis": "User identifies this file as the complete USCIS FY2025 Employer Data Hub export; not independently re-downloaded"
+  },
+  {
+    "file": "LCA_Disclosure_Data_FY2025_Q4.xlsx",
+    "url": "https://www.dol.gov/sites/dolgov/files/ETA/oflc/pdfs/LCA_Disclosure_Data_FY2025_Q4.xlsx",
+    "attempted_at_utc": "2026-10-26T01:14:57.626247+00:00",
+    "status": "blocked",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "bls_ooh.html",
+    "url": "https://www.bls.gov/ooh/",
+    "attempted_at_utc": "2026-10-26T01:14:57.451820+00:00",
+    "status": "blocked",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "bls_software_developers.html",
+    "url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm",
+    "attempted_at_utc": "2026-10-26T01:14:57.630262+00:00",
+    "status": "blocked",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "dol_performance.html",
+    "url": "https://www.dol.gov/agencies/eta/foreign-labor/performance",
+    "attempted_at_utc": "2026-10-26T01:14:57.626167+00:00",
+    "status": "blocked",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "fru_h1b.html",
+    "url": "https://salaries.fru.dev/h1b",
+    "attempted_at_utc": "2026-10-26T01:14:24.137487+00:00",
+    "resolved_url": "https://salaries.fru.dev/h1b",
+    "content_type": "text/html; charset=utf-8",
+    "status": "downloaded",
+    "bytes": 309122,
+    "sha256": "b62a0bff1f8188d6d556d31758cea2bd83f6ffad237710a9fb0ebff57048a53d"
+  },
+  {
+    "file": "nfap_fy2025.pdf",
+    "url": "https://nfap.com/wp-content/uploads/2025/11/H-1B-Petitions-and-Denial-Rates-For-FY-2025.NFAP-Policy-Brief.2025.pdf",
+    "attempted_at_utc": "2026-10-26T01:14:24.119529+00:00",
+    "resolved_url": "https://nfap.com/wp-content/uploads/2025/11/H-1B-Petitions-and-Denial-Rates-For-FY-2025.NFAP-Policy-Brief.2025.pdf",
+    "content_type": "application/pdf",
+    "status": "downloaded",
+    "bytes": 556890,
+    "sha256": "ad1300b76e21c428c4ac806f4620d28cc33e9beac9566d5ee454ca67e9a86aef"
+  },
+  {
+    "file": "open_doors_academic_level.xlsx",
+    "url": "https://opendoorsdata.org/wp-content/uploads/2025/11/Census_Academic-Level_OD25_Website.xlsx",
+    "attempted_at_utc": "2026-10-26T01:14:23.744914+00:00",
+    "resolved_url": "https://opendoorsdata.org/wp-content/uploads/2025/11/Census_Academic-Level_OD25_Website.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "status": "downloaded",
+    "bytes": 128243,
+    "sha256": "58d4524992fbee80a73d4444f66bd6f7597a7f15246a0c6163ef233bf4cb295e"
+  },
+  {
+    "file": "open_doors_enrollment.xlsx",
+    "url": "https://opendoorsdata.org/wp-content/uploads/2025/11/Census_Overall-Enrollment-1949-2025_OD25_Website.xlsx",
+    "attempted_at_utc": "2026-10-26T01:14:23.744459+00:00",
+    "resolved_url": "https://opendoorsdata.org/wp-content/uploads/2025/11/Census_Overall-Enrollment-1949-2025_OD25_Website.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "status": "downloaded",
+    "bytes": 25467,
+    "sha256": "ad30aa5a03b48e2ebff4f803c443ed700455cf3fc49053ae71effcab6affcd86"
+  },
+  {
+    "file": "open_doors_fields.xlsx",
+    "url": "https://opendoorsdata.org/wp-content/uploads/2025/11/Census_Field-of-Study_OD25_Website.xlsx",
+    "attempted_at_utc": "2026-10-26T01:14:23.744987+00:00",
+    "resolved_url": "https://opendoorsdata.org/wp-content/uploads/2025/11/Census_Field-of-Study_OD25_Website.xlsx",
+    "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "status": "downloaded",
+    "bytes": 32089,
+    "sha256": "fd316e2efe9852507968d32f18372ec6fe373b3931ffe866d8f2d8b823cfcb57"
+  },
+  {
+    "file": "opt_employers_2024.pdf",
+    "url": "https://www.ice.gov/doclib/sevis/btn/2024/2024_Top200_Employers_OPT_STEM_OPT_Students.pdf",
+    "attempted_at_utc": "2026-10-26T01:14:57.451675+00:00",
+    "status": "blocked",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "sevis_2024.pdf",
+    "url": "https://www.ice.gov/doclib/sevis/btn/25_0605_2024-sevis-btn.pdf",
+    "attempted_at_utc": "2026-10-26T01:14:57.451370+00:00",
+    "status": "blocked",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "uscis_hub.html",
+    "url": "https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub",
+    "attempted_at_utc": "2026-10-26T01:14:57.451749+00:00",
+    "status": "blocked",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]
