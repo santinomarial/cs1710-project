@@ -2,7 +2,7 @@ import { useState } from "react";
 import { max, scaleBand, scaleLinear } from "d3";
 import { primaryIndustries as data, number } from "../data";
 import { industryRows, nationalShare } from "../chartData";
-import { EvidenceRow, Tooltip, useChartWidth } from "./ChartPrimitives";
+import { ChartMeta, EvidenceRow, Tooltip, useChartWidth } from "./ChartPrimitives";
 
 const short = {
   "54": "Professional, scientific & technical", "61": "Educational services", "31-33": "Manufacturing",
@@ -17,11 +17,10 @@ export default function IndustryChart() {
   const [mode, setMode] = useState("count");
   const [query, setQuery] = useState("");
   const [all, setAll] = useState(false);
-  const [sort, setSort] = useState("count");
   const [selected, setSelected] = useState("61");
   const [hovered, setHovered] = useState(null);
   const [ref, width] = useChartWidth();
-  const rows = industryRows(data, { query, all, sort });
+  const rows = industryRows(data, { query, all, sort: "count" });
   const active = data.find(d => d.naics_code === (hovered ?? selected));
   const missing = data.find(d => !d.naics_code);
   const total = data.reduce((sum, d) => sum + d.initial_approvals, 0);
@@ -33,8 +32,9 @@ export default function IndustryChart() {
   const y = scaleBand().domain(rows.map(d => d.naics_code)).range([24, plotBottom]).paddingInner(.12);
   const label = mode === "count" ? "Initial approvals (petitions)" : "Share of all initial approvals (%)";
   const display = d => mode === "count" ? number(d.initial_approvals) : `${measure(d).toFixed(1)}%`;
-  const reset = () => { setQuery(""); setAll(false); setSort("count"); setHovered(null); };
+  const reset = () => { setQuery(""); setAll(false); setHovered(null); };
   return <figure className="interactive-figure" aria-labelledby="industry-title">
+    <ChartMeta source="USCIS Employer Data Hub" href={data[0].source_url} period="FY2025 · Oct 2024–Sep 2025" unit="Initial approved petitions (new + new concurrent employment)" />
     <div className="stat-ribbon">
       <div><strong>{number(total)}</strong><span>initial approvals · FY2025</span></div>
       <div><strong>{data.filter(d => d.naics_code).length}</strong><span>reported industry sectors</span></div>
@@ -45,12 +45,11 @@ export default function IndustryChart() {
         <button aria-pressed={mode === "count"} onClick={() => setMode("count")}>Approvals</button>
         <button aria-pressed={mode === "share"} onClick={() => setMode("share")}>National share (%)</button>
       </div>
-      <label className="control-label">Order<select value={sort} onChange={e => setSort(e.target.value)}><option value="count">Largest first</option><option value="name">Alphabetical</option></select></label>
       <label className="control-label search-control">Find an industry<input type="search" placeholder="Name or NAICS code" value={query} onChange={e => { setQuery(e.target.value); setHovered(null); }} /></label>
     </div>
     <div className="viz-split">
       <div className="plot-card" ref={ref}>
-        <div className="plot-heading"><h3 id="industry-title">Initial approvals by industry</h3><span>{rows.length} of 20 sectors</span></div>
+        <div className="plot-heading"><h3 id="industry-title">Professional services lead; education follows.</h3><span>{rows.length} of 20 sectors</span></div>
         <p className="interaction-hint">Hover or focus to preview. Click or Enter to pin a sector.</p>
         {rows.length ? <svg className="industry-chart evidence-chart" viewBox={`0 0 ${width} ${plotBottom + 70}`} role="group" aria-label={`Industry ranked bars: ${label}`}>
           {x.ticks(mobile ? 3 : 4).map(t => <g key={t} aria-hidden="true"><line className="viz-grid" x1={x(t)} x2={x(t)} y1="20" y2={plotBottom} /><text x={x(t)} y={plotBottom + 24} textAnchor="middle">{mode === "count" ? (t ? `${t / 1000}k` : "0") : `${t}%`}</text></g>)}

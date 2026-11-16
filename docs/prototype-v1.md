@@ -54,3 +54,7 @@ The website now includes the approved industry and novel comparison designs. Ear
 ## Additional unimplemented designs phase
 
 The current unimplemented-design count is now three: **02 wage comparison, 04 geographic distribution, and 05 fields of study**. The two new designs are static PNGs only; no React or D3 implementation was added. [Design specifications](visualization-designs/README.md) and [verification](visualization-designs/additional-design-verification.md) record source-backed values, aggregation, source geometry, reporting breaks and preservation checks. Requirement 4’s design deliverables are ready, but inclusion in the actual process book remains pending. No change is claimed for contributor documentation, missing wage inputs, full PDF assembly or the submission ZIP.
+
+## Later milestone: Prototype 3
+
+The Week 12 think-aloud revisions belong to **Prototype 3**, not Prototype V1. See the [Prototype 3 requirement tracker](prototype-3.md) and [feedback implementation report](think-aloud-feedback.md). The earlier entries above are historical V1 records.

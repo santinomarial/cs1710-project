@@ -51,3 +51,15 @@ test("both measures use a fixed zero-to-100 domain at mobile and desktop widths"
     }
   }
 });
+
+test("one-approval callout uses two distinct named-population denominators", () => {
+  const { total, bins } = parseEmployerDistribution(original);
+  const one = bins[0];
+  assert.equal(one.employer_count, 18343);
+  assert.equal(one.initial_approvals, 18343);
+  assert.equal(percentage(one.employer_share_percent), "62.5%");
+  assert.equal(percentage(one.approval_share_percent), "16.0%");
+  assert.ok(Math.abs(one.employer_share_percent - 18343 / total.population_employers * 100) < 1e-8);
+  assert.ok(Math.abs(one.approval_share_percent - 18343 / total.population_initial_approvals * 100) < 1e-8);
+  assert.equal(total.population_initial_approvals, 114798);
+});

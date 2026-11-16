@@ -212,3 +212,53 @@ h2 { font-size:clamp(40px,4.4vw,62px); }
   .reveal-stat > strong { font-size:96px; }
   .reveal-stat p { font-size:16px; }
 }
+
+/* Think-aloud revision: a short takeaway, explicit units, then optional detail. */
+.chart-takeaway { margin: 0 0 12px; font: 400 clamp(24px, 2.5vw, 34px)/1.2 Georgia, serif; color: #19392e; }
+.chart-meta { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 0 0 20px; padding-bottom: 14px; border-bottom: 1px solid #dce3d8; font-size: 12px; line-height: 1.6; color: #50635a; }
+.chart-meta a { font-weight: 700; color: inherit; text-underline-offset: 3px; }
+.chart-meta b { font-weight: 700; }
+.opt-plot { min-width: 0; width: 100%; }
+.opt-chart { display: block; width: 100%; }
+.opt-year-target { fill: transparent; cursor: crosshair; }
+.opt-year-target:focus-visible { outline: none; fill: #42765d15; stroke: #42765d; stroke-width: 1; }
+.opt-inspection { pointer-events: none; }
+.opt-inspection line { stroke: #42765d; stroke-opacity: .45; stroke-dasharray: 4 4; }
+.chart-readout { font-variant-numeric: tabular-nums; }
+.section-methods { margin-top: 18px; border-top: 1px solid #cdd5c9; padding: 16px 0; color: #50635a; font-size: 13px; line-height: 1.7; }
+.section-methods summary { color: #19392e; font-weight: 700; cursor: pointer; }
+.section-methods p { max-width: 85ch; }
+.distribution-panel .chart-meta { color: #d3ded2; border-color: #ffffff28; }
+.distribution-heading h3 { max-width: 800px; }
+.distribution-callout { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; padding: 24px 0; margin-bottom: 22px; border-bottom: 1px solid #ffffff28; }
+.distribution-callout > div { display: flex; flex-direction: column; gap: 8px; max-width: 370px; }
+.distribution-callout strong { color: #e3b482; font: 400 clamp(40px, 5vw, 64px)/1 Georgia, serif; }
+.distribution-callout span { font-size: 17px; line-height: 1.4; }
+.distribution-callout small { color: #c0cebf; font-size: 12px; font-variant-numeric: tabular-nums; }
+.distribution-denominator { margin: 14px 0 8px; color: #e4ece2; font-size: 13px; line-height: 1.6; }
+.distribution-plot { position: relative; min-width: 0; }
+.distribution-plot .chart-tooltip { background: #f4f1e9; color: #19392e; }
+.distribution-plot .chart-tooltip span:last-child { color: #50635a; }
+.distribution-limits { margin: 16px 0; }
+.distribution-methods { border-top: 1px solid #ffffff28; border-bottom: 1px solid #ffffff28; padding: 14px 0; color: #c7d5c6; font-size: 12px; line-height: 1.7; }
+.distribution-methods summary { color: #e3ece2; cursor: pointer; font-weight: 700; }
+.match-key { display: flex; flex-wrap: wrap; gap: 12px 24px; font-size: 12px; color: #50635a; padding: 4px 0 16px; }
+.match-key > span { display: inline-flex; align-items: center; gap: 8px; }
+.comparison-filter-panel { margin-bottom: 22px; padding: 14px 18px; border: 1px solid #d5ded1; border-radius: 6px; }
+.comparison-filter-panel summary { cursor: pointer; font-size: 13px; font-weight: 700; }
+.comparison-filter-panel summary > span { margin-left: 12px; color: #50635a; font-size: 12px; font-weight: 400; }
+.comparison-filter-panel > .control-label { margin-top: 18px; max-width: 420px; }
+.comparison-filter-panel .match-filters { margin-top: 16px; }
+.interactive-figure > .chart-meta + .chart-meta { margin-top: -12px; }
+.dark-section .section-intro > p { color: #d2ddce; }
+@media (max-width: 600px) {
+  .chart-meta { flex-direction: column; gap: 4px; }
+  .distribution-callout { gap: 20px; }
+  .distribution-callout span { font-size: 14px; }
+  .distribution-callout small { font-size: 11px; }
+  .distribution-controls { flex-wrap: wrap; }
+  .distribution-controls button { flex: 1; }
+  .distribution-chart .distribution-axis-title { font-size: 10px; }
+  .comparison-filter-panel summary > span { display: block; margin: 6px 0 0; }
+  .chart-readout { flex-wrap: wrap; }
+}

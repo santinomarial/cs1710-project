@@ -104,7 +104,7 @@ export default function App() {
           <a href="#sources">Sources & method</a>
         </nav>
         <span className="edition">
-          CS1710 <span> / </span> PROTOTYPE V1
+          CS1710 <span> / </span> PROTOTYPE 3
         </span>
       </header>
       <main id="main">
@@ -194,41 +194,19 @@ export default function App() {
         <section className="wrap section" id="growth">
           <Chapter n="01">FROM CAMPUS TO THE WORKFORCE</Chapter>
           <div className="section-intro">
-            <h2>
-              A growing role for
-              <br />
-              <em>post-graduation work.</em>
-            </h2>
-            <div>
-              <p>
-                In {latest.academic_year}, Open Doors counted{" "}
-                {number(latest.total_international_students)} international
-                students, including {number(latest.opt_students)} on OPT. OPT
-                participation rose {growth.toFixed(1)}% from the previous
-                academic year.
-              </p>
-              <p className="small">
-                OPT is a form of work authorization for eligible F-1 students.
-                Open Doors reports participants separately from enrolled
-                students; these are not counts of H-1B approvals.
-              </p>
-            </div>
+            <h2>OPT participation<br /><em>rose {growth.toFixed(1)}% in a year.</em></h2>
+            <p>In {latest.academic_year}, Open Doors counted {number(latest.opt_students)} students on OPT within its total of {number(latest.total_international_students)} international students.</p>
           </div>
           <OptChart />
-          <p className="source-note">
-            Coverage note: Open Doors counted international students studying
-            online from outside the U.S. in 2020/21–2022/23. Long-run
-            comparisons also span changes in reporting methods.{" "}
-            <a href="#sources">See methodology.</a>
-          </p>
+          <details className="section-methods"><summary>What OPT measures & coverage limits</summary><p>OPT is work authorization for eligible F-1 students. Open Doors reports OPT participants separately from enrolled students; these are not H-1B approvals. Its international-student totals included students studying online outside the U.S. in 2020/21–2022/23. Long-run comparisons span reporting changes. <a href="#sources">See methodology.</a></p></details>
         </section>
 
         <section className="section soft-section" id="opt-employers">
           <div className="wrap">
             <Chapter n="02">WHERE OPT PARTICIPANTS WORK</Chapter>
             <div className="section-intro">
-              <h2>The first employers<br /><em>in the story.</em></h2>
-              <div><p>ICE’s calendar-2024 employer table brings names into view. Amazon leads the published list, alongside universities and other organizations.</p><p className="small">This is a different source and reporting period from the academic-year trend above. The employer counts are participation records, not a national count of unique students.</p></div>
+              <h2>Companies and campuses.<br /><em>Both employ OPT participants.</em></h2>
+              <p>Amazon leads ICE’s calendar-2024 top-200 employer list, which also includes universities and other organizations.</p>
             </div>
             <OptEmployers />
           </div>
@@ -239,48 +217,9 @@ export default function App() {
             <Chapter n="03" light>
               THE PICTURE GETS BIGGER
             </Chapter>
-            <div className="reveal">
-              <div>
-                <h2>
-                  Thousands of employers.
-                  <br />
-                  <em>A wider story.</em>
-                </h2>
-                <p>
-                  The supplied USCIS export contains{" "}
-                  {number(distribution.employers_with_initial_approval)}{" "}
-                  named employer groups with at least one initial H-1B approval in FY2025.
-                  That reach extends beyond the familiar technology companies.
-                </p>
-                <a className="text-link" href="https://www.uscis.gov/tools/reports-and-studies/h-1b-employer-data-hub">
-                  Explore the primary source ↗
-                </a>
-              </div>
-              <div className="reveal-stat">
-                <strong>
-                  {distribution.employer_share_exactly_1_initial_approval}
-                  <span>%</span>
-                </strong>
-                <p>
-                  of those employer groups had
-                  <br />
-                  just one initial approval.
-                </p>
-                <span className="small">
-                  USCIS · calculated share, rounded · FY2025
-                </span>
-              </div>
-            </div>
-            <div className="reveal-note">
-              <b>
-                {distribution.employer_share_1_to_10_initial_approvals}% had ten
-                or fewer.
-              </b>
-              <p>
-                This cumulative share includes groups with one approval. Groups
-                use exact reported names and tax suffixes; they are not verified
-                unique legal employers. See the counting rule below.
-              </p>
+            <div className="section-intro">
+              <h2>Small sponsors.<br /><em>Broad reach.</em></h2>
+              <p>{distribution.employer_share_1_to_10_initial_approvals}% of the {number(distribution.employers_with_initial_approval)} named employer groups with initial approvals in FY2025 had ten or fewer.</p>
             </div>
             <EmployerDistribution />
             <EmployerTable />
@@ -290,8 +229,8 @@ export default function App() {
         <section className="wrap section" id="industries">
           <Chapter n="04">ACROSS THE ECONOMY</Chapter>
           <div className="section-intro">
-            <h2>More than<br /><em>one industry.</em></h2>
-            <div><p>Education, manufacturing and health care appear alongside professional services and information. Initial H-1B approvals reach across the economy.</p><p className="small">Explore the complete FY2025 USCIS export by employer industry. Industry describes organizations, not individual occupations or a technology/nontechnology split.</p></div>
+            <h2>Sponsorship spans<br /><em>20 industry sectors.</em></h2>
+            <p>Professional, scientific and technical services lead FY2025 initial approvals; education, manufacturing and health care also have a substantial presence.</p>
           </div>
           <IndustryChart />
         </section>
@@ -300,8 +239,8 @@ export default function App() {
           <div className="wrap">
             <Chapter n="05">TWO DATASETS, ONE EMPLOYER LENS</Chapter>
             <div className="section-intro">
-              <h2>Compare the pattern.<br /><em>Inspect the match.</em></h2>
-              <div><p>What happens when we put two employer-level records side by side? For 47 conservatively matched names, we can compare reported OPT/STEM OPT participation with initial H-1B approvals.</p><p className="small">The connection is a name-level comparison. It cannot tell us which students later received H-1B status.</p></div>
+              <h2>Shared names.<br /><em>Different measures.</em></h2>
+              <p>For 47 conservatively matched names, compare calendar-2024 OPT/STEM OPT participation with FY2025 initial H-1B approvals.</p>
             </div>
             <EmployerComparison />
           </div>
@@ -310,8 +249,8 @@ export default function App() {
         <section className="wrap section" id="wages">
           <Chapter n="06">WHAT THE WAGE DATA COULD SAY</Chapter>
           <div className="section-intro">
-            <h2>Offered wages,<br /><em>in context.</em></h2>
-            <div><p>How do wages offered in H-1B filings compare with occupational medians? A fair comparison requires a matched occupation, a defined reporting period and the same geographic scope.</p><p className="small">This next question remains a proposal. Matched DOL/BLS data are not yet available.</p></div>
+            <h2>The wage question<br /><em>remains open.</em></h2>
+            <p>Comparing offered H-1B wages with occupational medians requires matched DOL/BLS data that are not yet available.</p>
           </div>
           <WageProposal />
         </section>
@@ -325,18 +264,8 @@ export default function App() {
               <em>Respect the limits.</em>
             </h2>
             <div>
-              <p>
-                The evidence invites policymakers to consider employers across
-                sectors, alongside the universities that educate international
-                students. University administrators can use this foundation to
-                ask better questions about work opportunities after graduation.
-              </p>
-              <p>
-                These aggregate records do not track individual OPT-to-H-1B
-                transitions or establish the effects of immigration
-                restrictions. The employer comparison identifies accepted name
-                pairs, not verified shared legal entities or student transitions.
-              </p>
+              <p>OPT and H-1B policy discussions should account for employers across sectors, including universities, hospitals and manufacturers.</p>
+              <p className="small">These aggregate data do not track individual OPT-to-H-1B transitions or establish the effects of policy changes.</p>
               <a className="button outline" href="#sources">
                 Inspect the evidence <span>↓</span>
               </a>
@@ -350,7 +279,7 @@ export default function App() {
             <div className="sources-heading">
               <h2>Open to inspection.</h2>
               <p>
-                Prototype V1 · Source retrieval attempted October 25, 2026.
+                Prototype 3 · Source retrieval attempted October 25, 2026.
                 <br />
                 Every displayed statistic traces to a downloaded source.
               </p>
